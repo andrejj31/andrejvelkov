@@ -6,7 +6,7 @@ export default function Navigation() {
       <ul className="main-nav__contact">
         <li>
           <a href="mailto:velkovandrej819@gmail.com">
-            <img src="./mail.svg" alt="" />
+            <img src={`${process.env.PUBLIC_URL}/mail.svg`} alt="" />
             <span className="main-nav__link">velkovandrej819@gmail.com</span>
           </a>
         </li>
