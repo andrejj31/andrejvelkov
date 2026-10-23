@@ -17,8 +17,10 @@ export default function Portfolio() {
             image={`${process.env.PUBLIC_URL}/danai.jpg`} name="DANAI FARM"
             solution="Complete web solution"
             description="This was a challenging project that involved designing and developing the entire website, including creating the content and structuring the layout. The website was built to support two languages and features product sorting by categories and subcategories. I was responsible for defining the overall architecture and implementation strategy for both the API and the frontend. A key focus was creating a user-friendly content management system that allows the client to manage and update website content independently, without requiring any coding knowledge."
+            link="https://danaifarm.com.mk"
           ></PortfolioItem>
         </div>
+        <Button message="View more"></Button>
       </div>
     </div>
   );

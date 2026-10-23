@@ -1,31 +1,36 @@
 import React from "react";
+import { PanelsTopLeft, Code2, Server, Database } from "lucide-react";
 import Card from "./Card";
 
 export default function Skills() {
   return (
     <div className="skills">
-      <h3 className="title">What I do?🤔</h3>
+      <h3 className="title">What I do? 🤔</h3>
+
       <div className="skills__cards">
         <Card
-          image={`${process.env.PUBLIC_URL}/design.svg`}
-          title="UI/UX DESIGN"
-          desc="Craft captivating UI/UX designs for enhanced user experiences. I create visually appealing interfaces that impress and engage your users."
-        ></Card>
+          image={<PanelsTopLeft size={40} />}
+          title="COMPLETE WEB SOLUTIONS"
+          desc="I build complete web applications, from frontend interfaces to backend systems and database integration, using modern technologies."
+        />
+
         <Card
-          image={`${process.env.PUBLIC_URL}/dev.svg`}
-          title="DEVELOPMENT"
-          desc="ransform your ideas into functional websites or applications with our top-notch development services."
-        ></Card>
+          image={<Code2 size={40} />}
+          title="FRONTEND DEVELOPMENT"
+          desc="I create clean, user-friendly interfaces that look great and work smoothly across different devices."
+        />
+
         <Card
-          image={`${process.env.PUBLIC_URL}/seo.svg`}
-          title="SEO"
-          desc="Boost your online visibility and outrank the competition with our comprehensive SEO strategies."
-        ></Card>
+          image={<Server size={40} />}
+          title="BACKEND DEVELOPMENT"
+          desc="I develop server-side applications, build APIs, and connect applications with databases."
+        />
+
         <Card
-          image={`${process.env.PUBLIC_URL}/maintenance.svg`}
-          title="MAINTENANCE"
-          desc="I proactively monitor, update, and troubleshoot your site, providing peace of mind and uninterrupted functionality"
-        ></Card>
+          image={<Database size={40} />}
+          title="DATABASES"
+          desc="I work with PostgreSQL and MongoDB to store, organize, and manage application data."
+        />
       </div>
     </div>
   );

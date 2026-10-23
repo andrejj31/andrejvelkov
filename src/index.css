@@ -234,9 +234,16 @@ nav.main-nav {
   transform: scale(1.05);
 }
 
-.skills__card img {
-  width: 5rem;
-  height: 4.5rem;
+.skills__card-icon {
+  margin-bottom: 12px;
+
+  display: flex;
+  align-items: center;
+  color: var(--yellow);
+}
+
+.skills__card-icon svg {
+  stroke-width: 2;
 }
 
 .skills__card h5 {
