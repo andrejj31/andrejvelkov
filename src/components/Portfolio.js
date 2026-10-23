@@ -20,7 +20,6 @@ export default function Portfolio() {
             link="https://danaifarm.com.mk"
           ></PortfolioItem>
         </div>
-        <Button message="View more"></Button>
       </div>
     </div>
   );
