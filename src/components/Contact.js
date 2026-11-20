@@ -6,7 +6,7 @@ export default function Contact() {
   return (
     <div className="outline contact">
       <div>
-        <p className="contact__title">Let’s work together.</p>
+        <p className="contact__title">Get in touch.</p>
         <a className="contact__email" href={`mailto:${EMAIL}`}>
           {EMAIL}
         </a>
