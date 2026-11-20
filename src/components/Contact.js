@@ -1,28 +1,23 @@
 import React from "react";
-import Button from "../components/Button";
+import { Mail } from "lucide-react";
+import CopyEmail, { EMAIL } from "./CopyEmail";
 
 export default function Contact() {
   return (
-    <section className="contact">
-      <div className="container">
-        <form action="" className="contact__content">
-          <div className="contact__typography">
-            <h5>Send me a message</h5>
-            <p>I'll strive to provide the quickest possible response🚀</p>
-          </div>
-          <div className="contact__group">
-            <div className="contact__field">
-              <label htmlFor="name">Your name</label>
-              <input type="text" name="name" placeholder="Name Surname" />
-            </div>
-            <div className="contact__field">
-              <label htmlFor="message">Message</label>
-              <textarea name="message" rows="10" placeholder="Your message" />
-            </div>
-          </div>
-          <Button message="Send"></Button>
-        </form>
+    <div className="outline contact">
+      <div>
+        <p className="contact__title">Let’s work together.</p>
+        <a className="contact__email" href={`mailto:${EMAIL}`}>
+          {EMAIL}
+        </a>
       </div>
-    </section>
+      <div className="contact__actions">
+        <a className="btn btn--dark" href={`mailto:${EMAIL}`}>
+          <Mail size={16} aria-hidden="true" />
+          Email me
+        </a>
+        <CopyEmail className="btn btn--light" label="Copy email" />
+      </div>
+    </div>
   );
 }
